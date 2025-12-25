@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Baker 🧑‍🍳 | Filipino-Inspired Artisan Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <h1>The Baker</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   <section class="hero" id="home" style="background-image: url('img/hero-bakery.jpg');">
+    <div class="hero-content">
+        <h2 class="hero-title">Filipino-Inspired Artisan Bakery</h2>
+        <p class="hero-subtitle">Filipino Flavours, Artisan Craft</p>
+        <a href="#products" class="btn-hero">Explore Our Creations</a>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <p class="section-subtitle">Family tradition since 1975</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded by a Cagayan De Oro City Family in 2003, <strong>The Baker</strong> began as a humble neighbourhood <em>panaderia</em>. For three generations, we've been dedicated to the craft of baking, blending cherished Filipino recipes with refined European techniques to create something uniquely delicious.</p>
+                    <p>While we honour traditions like slow fermentation and baking in banana leaves, our philosophy is rooted in fusion. We believe the rich, earthy flavours of local ingredients like <em>muscovado sugar</em>, <em>coconut</em>, and <em>purple yam (ube)</em> pair beautifully with classic buttery pastry methods.</p>
+                    <p>Every day, we bake with <em>malasakit</em> (compassion)—a Filipino value of heartfelt care. This means selecting the finest local and imported ingredients, hand-shaping each roll, and ensuring every bite connects you to our heritage and our passion.</p>
+                    <div class="filipino-symbols">
+                        <span class="symbol">🍚</span>
+                        <span class="symbol">🥥</span>
+                        <span class="symbol">🍍</span>
+                    </div>
+                </div>
+                <div class="about-image">
+    <div class="image-placeholder">
+        <img src="img/bakers.jpg" alt="Our Artisan Bakers at Work" class="about-photo">
+        <p class="image-caption">Our Artisan Bakers at Work</p>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Carousel -->
+    <section class="products section-padding" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Artisan Creations</h2>
+                <p class="section-subtitle">A fusion of Filipino heritage and European craftsmanship</p>
+            </div>
+            
+            <!-- Product Categories -->
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="bread">Filipino Bread</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="kakanin">Kakanin</button>
+                <button class="category-btn" data-category="european">European Classics</button>
+            </div>
+            
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-track">
+                    <!-- Slides will be inserted here by JavaScript -->
+                </div>
+                
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <!-- Indicators will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Product Details Panel -->
+            <div class="product-details">
+                <h3 class="selected-product-name">Select a product to view details</h3>
+                <p class="selected-product-description">Click on any product or use the navigation arrows to browse our collection.</p>
+                <div class="product-tags">
+                    <span class="product-tag">Fresh Daily</span>
+                    <span class="product-tag">Handcrafted</span>
+                    <span class="product-tag">Artisan Quality</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Signature Specialties</h2>
+                <p class="section-subtitle">Unique creations that define The Baker</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Ube Croissant</h3>
+                    <p>Our signature fusion: a classic, buttery French croissant swirled with sweet, vibrant purple yam (ube) filling. A perfect blend of European technique and iconic Filipino flavour.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Spanish Bread</h3>
+                    <p>A beloved Filipino bakery staple. These soft, fluffy rolls are filled with a sweet, milky filling, rolled in breadcrumbs, and baked to perfection. Enjoyed daily across the islands.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Puto Bumbong</h3>
+                    <p>A festive, traditional delicacy. Purple glutinous rice is steamed in bamboo tubes, then topped with butter, grated coconut, and muscovado sugar. A taste of a Filipino Christmas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Panaderia Street<br>Lapasan, Cagayan De Oro City 9000</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Friday: 5am - 8pm<br>Saturday - Sunday: 4am - 7pm</p>
+                            <p class="note">*Early hours for fresh pandesal!</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>hello@thebaker.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+63 81 654 6761</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>The Baker</h2>
+                    <p>Filipino-Inspired Artisan Bakery</p>
+                    <p class="tagline">Serving Cagayan De Oro City since 2003</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                    <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                    <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+                </div>
+                <div class="footer-tagalog">
+                    <p>Thank you for your support!</p>
+                    <p>Thank you and again, cheers!</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; <span id="currentYear">2023</span> The Baker. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
